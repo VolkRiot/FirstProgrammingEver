@@ -9,11 +9,11 @@ void DisplayAll(int);
 
 struct Node
 {
-Node *Next;
-string emp_id;
-float hours;
-float pay;
-Node *Previous;
+  Node *Next;
+  string emp_id;
+  float hours;
+  float pay;
+  Node *Previous;
 };
 
 Node *P;
@@ -48,6 +48,7 @@ void InputValues()
 
     SetAll(temp_id, temp_hours, temp_pay);
 }
+
 void SetAll(string emp, float h, float payrt)
 {
     P ->emp_id = emp;
@@ -80,6 +81,7 @@ index = 0;
     }
     return NULL;
 }
+
 void DisplayAll(int total_nodes)
 {
     P = First;
@@ -105,11 +107,11 @@ void DisplayAll(int total_nodes)
 
 int main()
 {
-string temp_id;
-int selection, n;
-bool again = true;
-int total_nodes = 0;
-float temp_float;
+  string temp_id;
+  int selection, n;
+  bool again = true;
+  int total_nodes = 0;
+  float temp_float;
 
 do
 {
